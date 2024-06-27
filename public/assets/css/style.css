@@ -218,6 +218,9 @@ font-family: 'Poppins', sans-serif;
     padding-right: 8px;
     padding-left: 8px;
   }
+  .mobileviewfilter{
+    padding-left: 45px !important;
+  }
 }
 
 /* ----------------------------------------------------
@@ -4359,7 +4362,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 .ltn__tagcloud-widget ul li a {
   display: block;
-  padding: 8px 24px 6px;
+  padding: 8px 12px 6px;
   font-size: 13px;
   text-transform: uppercase;
   background-color: var(--section-bg-1);
@@ -9123,7 +9126,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   font-size: 14px;
 }
 .ltn__product-item-4 .product-title {
-  font-size: 22px;
+  font-size: 16px;
   margin-bottom: 15px;
   font-weight: 600;
 }
@@ -10018,7 +10021,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .ltn__shop-options {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .ltn__shop-options > ul {
   display: -webkit-box;
@@ -11478,11 +11481,20 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   text-align: center;
 }
 
-/* feature-item-6 */
+/* feature-item-6
 .ltn__feature-item-6 {
   border: 1px solid var(--border-color-8);
   margin-bottom: 30px;
   padding: 40px 30px 35px;
+} */
+ 
+/* feature-item-6 */
+.ltn__feature-item-6 {
+  border: 1px solid var(--border-color-8);
+  margin-bottom: 30px;
+  /* padding: 40px 30px 35px; */
+  padding: 27px 30px 35px;
+  height: 217px;
 }
 .ltn__feature-item-6::before {
   position: absolute;
