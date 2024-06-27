@@ -75,11 +75,11 @@ class ProductSliderV1 extends Component {
 			          <div className="product-info-bottom">
 			            <div className="real-estate-agent">
 			              <div className="agent-img go-top">
-			                <Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
+			                <Link to="/"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
 			              </div>
 			              <div className="agent-brief go-top">
-			                <h6><Link to="/team-details">William Seklo</Link></h6>
-			                <small>Estate Agents</small>
+			                <h6><Link to="/">William Seklo</Link></h6>
+			                {/* <small>Estate Agents</small> */}
 			              </div>
 			            </div>
 			            <div className="product-hover-action">
@@ -159,11 +159,11 @@ class ProductSliderV1 extends Component {
 			          <div className="product-info-bottom">
 			            <div className="real-estate-agent">
 			              <div className="agent-img go-top">
-			                <Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
+			                <Link to="/"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
 			              </div>
 			              <div className="agent-brief go-top">
-			                <h6><Link to="/team-details">William Seklo</Link></h6>
-			                <small>Estate Agents</small>
+			                <h6><Link to="/">William Seklo</Link></h6>
+			                {/* <small>Estate Agents</small> */} 
 			              </div>
 			            </div>
 			            <div className="product-hover-action">
@@ -243,11 +243,11 @@ class ProductSliderV1 extends Component {
 			          <div className="product-info-bottom">
 			            <div className="real-estate-agent">
 			              <div className="agent-img go-top">
-			                <Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
+			                <Link to="/"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
 			              </div>
 			              <div className="agent-brief go-top">
-			                <h6><Link to="/team-details">William Seklo</Link></h6>
-			                <small>Estate Agents</small>
+			                <h6><Link to="/">William Seklo</Link></h6>
+			                 {/* <small>Estate Agents</small> */}
 			              </div>
 			            </div>
 			            <div className="product-hover-action">
@@ -327,11 +327,11 @@ class ProductSliderV1 extends Component {
 			          <div className="product-info-bottom">
 			            <div className="real-estate-agent">
 			              <div className="agent-img go-top">
-			                <Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
+			                <Link to="/"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
 			              </div>
 			              <div className="agent-brief go-top">
-			                <h6><Link to="/team-details">William Seklo</Link></h6>
-			                <small>Estate Agents</small>
+			                <h6><Link to="/">William Seklo</Link></h6>
+			                 {/* <small>Estate Agents</small> */}
 			              </div>
 			            </div>
 			            <div className="product-hover-action">
@@ -411,11 +411,11 @@ class ProductSliderV1 extends Component {
 			          <div className="product-info-bottom">
 			            <div className="real-estate-agent">
 			              <div className="agent-img go-top">
-			                <Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
+			                <Link to="/"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
 			              </div>
 			              <div className="agent-brief go-top">
-			                <h6><Link to="/team-details">William Seklo</Link></h6>
-			                <small>Estate Agents</small>
+			                <h6><Link to="/">William Seklo</Link></h6>
+			                 {/* <small>Estate Agents</small> */}
 			              </div>
 			            </div>
 			            <div className="product-hover-action">

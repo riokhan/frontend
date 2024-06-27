@@ -80,7 +80,7 @@ class Root extends Component {
                         <Route path="/location" component={ Location } />
                         <Route path="/shop" component={ Shop } />
                         <Route path="/shop-grid" component={ ShopGrid } />
-                        <Route path="/shop-left-sidebar" component={ ShopLeftSidebar } />
+                        <Route path="/listings" component={ ShopLeftSidebar } />
                         <Route path="/shop-right-sidebar" component={ ShopRightSidebar } />
 
                         <Route path="/product-details" component={ ProdductDetails } />

@@ -125,13 +125,13 @@ class Navbar extends Component {
 								</li>
 								</ul> */}
 							</li>
-							<li><Link to="/">Street Review</Link>
+							<li><Link to="/listings">Street Review</Link>
 							</li>
-							<li><Link to="/">Student Buddy</Link>
+							<li><Link to="/listings">Student Buddy</Link>
 							</li>
-							<li><Link to="/">Housing Checklist</Link>
+							<li><Link to="/listings">Housing Checklist</Link>
 							</li>
-							<li><Link to="/">Open House</Link>
+							<li><Link to="/listings">Open House</Link>
 							</li>
 							{/* <li className="menu-icon"><Link to="/about">About</Link>
 								<ul>

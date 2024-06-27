@@ -51,7 +51,7 @@ class Footer_v1 extends Component {
 				          <div className="footer-widget footer-about-widget">
 				            <div className="footer-logo">
 				              <div className="site-logo">
-				                <img src={publicUrl+"assets/img/logo-2.png"} alt="Logo" />
+				                <img src={publicUrl+"assets/img/logo.png"} alt="Logo" />
 				              </div>
 				            </div>
 				            <p>Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.</p>
@@ -62,7 +62,7 @@ class Footer_v1 extends Component {
 				                    <i className="icon-placeholder" />
 				                  </div>
 				                  <div className="footer-address-info">
-				                    <p>Brooklyn, New York, United States</p>
+				                    <p>United States</p>
 				                  </div>
 				                </li>
 				                <li>
@@ -70,7 +70,7 @@ class Footer_v1 extends Component {
 				                    <i className="icon-call" />
 				                  </div>
 				                  <div className="footer-address-info">
-				                    <p><a href="tel:+0123-456789">+0123-456789</a></p>
+				                    <p><a href="tel:+0123-456789">+011111111</a></p>
 				                  </div>
 				                </li>
 				                <li>
@@ -93,12 +93,12 @@ class Footer_v1 extends Component {
 				            <h4 className="footer-title">Company</h4>
 				            <div className="footer-menu go-top">
 				              <ul>
-				                <li><Link to="/about">About</Link></li>
-				                <li><Link to="/blog-grid">Blog</Link></li>
-				                <li><Link to="/shop">All Products</Link></li>
-				                <li><Link to="/contact">Contact</Link></li>
-				                <li><Link to="/faq">FAQ</Link></li>
-				                <li><Link to="/contact">Contact us</Link></li>
+				                <li><Link to="/">About</Link></li>
+				                <li><Link to="/">Blog</Link></li>
+				                <li><Link to="/">All Products</Link></li>
+				                <li><Link to="/">Contact</Link></li>
+				                <li><Link to="/">FAQ</Link></li>
+				                <li><Link to="/">Contact us</Link></li>
 				              </ul>
 				            </div>
 				          </div>
@@ -108,12 +108,12 @@ class Footer_v1 extends Component {
 				            <h4 className="footer-title">Services</h4>
 				            <div className="footer-menu go-top">
 				              <ul>
-				                <li><Link to="/cart">Cart</Link></li>
-				                <li><Link to="/wishlist">Wish List</Link></li>
-				                <li><Link to="/login">Login</Link></li>
-				                <li><Link to="/checkout">Checkout</Link></li>
-				                <li><Link to="/about">Terms &amp; Conditions</Link></li>
-				                <li><Link to="/shop">Promotional Offers</Link></li>
+				                <li><Link to="/">Cart</Link></li>
+				                <li><Link to="/">Wish List</Link></li>
+				                <li><Link to="/">Login</Link></li>
+				                <li><Link to="/">Checkout</Link></li>
+				                <li><Link to="/">Terms &amp; Conditions</Link></li>
+				                <li><Link to="/">Promotional Offers</Link></li>
 				              </ul>
 				            </div>
 				          </div>
@@ -123,12 +123,12 @@ class Footer_v1 extends Component {
 				            <h4 className="footer-title">Customer Care</h4>
 				            <div className="footer-menu go-top">
 				              <ul>
-				                <li><Link to="/login">Login</Link></li>
-				                <li><Link to="/my-account">My account</Link></li>
-				                <li><Link to="/wishlist">Wish List</Link></li>
-				                <li><Link to="/add-listing">Add listing</Link></li>
-				                <li><Link to="/faq">FAQ</Link></li>
-				                <li><Link to="/contact">Contact us</Link></li>
+				                <li><Link to="/">Login</Link></li>
+				                <li><Link to="/">My account</Link></li>
+				                <li><Link to="/">Wish List</Link></li>
+				                <li><Link to="/">Add listing</Link></li>
+				                <li><Link to="/">FAQ</Link></li>
+				                <li><Link to="/">Contact us</Link></li>
 				              </ul>
 				            </div>
 				          </div>
