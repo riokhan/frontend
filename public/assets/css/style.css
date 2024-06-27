@@ -5346,8 +5346,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .ltn__main-menu > ul > li > a {
-  font-size: 18px;
-  padding: 20px 10px;
+  font-size: 14px;
+  padding: 0px 10px;
   display: inline-block;
   white-space: nowrap;
   color: var(--ltn__heading-color);

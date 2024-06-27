@@ -18,8 +18,8 @@ class NavbarV3 extends Component {
 						<div className="col-md-7">
 						<div className="ltn__top-bar-menu">
 							<ul>
-							<li><a href="mailto:info@webmail.com"><i className="icon-mail" /> info@webmail.com</a></li>
-							<li><a href="locations.html"><i className="icon-placeholder" /> 15/A, Nest Tower, NYC</a></li>
+							{/* <li><a href="mailto:info@webmail.com"><i className="icon-mail" /> info@webmail.com</a></li> */}
+							{/* <li><a href="locations.html"><i className="icon-placeholder" /> 15/A, Nest Tower, NYC</a></li> */}
 							</ul>
 						</div>
 						</div>

@@ -24,7 +24,7 @@ class Banner extends Component {
 				                      <i className="fa fa-play" />
 				                    </a>
 				                  </div>
-				                  <h6 className="slide-sub-title white-color--- animated"><span><i className="fas fa-home" /></span> Real Estate Agency</h6>
+				                  {/* <h6 className="slide-sub-title white-color--- animated"><span><i className="fas fa-home" /></span> Real Estate Agency</h6> */}
 				                  <h1 className="slide-title animated ">Find Your Dream <br /> House By Us</h1>
 				                  <div className="slide-brief animated">
 				                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
@@ -38,7 +38,7 @@ class Banner extends Component {
 				                </div>
 				              </div>
 				              <div className="slide-item-img">
-				                <img src={publicUrl+"/assets/img/slider/21.png"} alt="#" />
+				                <img src={publicUrl+"assets/img/slider/21.png"} alt="#" />
 				              </div>
 				            </div>
 				          </div>
@@ -53,7 +53,7 @@ class Banner extends Component {
 				            <div className="col-lg-12 align-self-center">
 				              <div className="slide-item-info">
 				                <div className="slide-item-info-inner ltn__slide-animation">
-				                  <h6 className="slide-sub-title white-color--- animated"><span><i className="fas fa-home" /></span> Real Estate Agency</h6>
+				                  {/* <h6 className="slide-sub-title white-color--- animated"><span><i className="fas fa-home" /></span> Real Estate Agency</h6> */}
 				                  <h1 className="slide-title animated ">The Right Place <br />of House Finding</h1>
 				                  <div className="slide-brief animated">
 				                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
@@ -65,7 +65,7 @@ class Banner extends Component {
 				                </div>
 				              </div>
 				              <div className="slide-item-img slide-img-left">
-				                <img src={publicUrl+"/assets/img/slider/21.png"} alt="#" />
+				                <img src={publicUrl+"assets/img/slider/21.png"} alt="#" />
 				              </div>
 				            </div>
 				          </div>

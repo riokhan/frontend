@@ -19,7 +19,7 @@ const Home_V1 = () => {
     return <div>
         <Navbar />
         <Banner />
-        <SearchForm />
+        {/* <SearchForm /> */}
         <Aboutv1 />
         <Counter />
         <AboutV2 />

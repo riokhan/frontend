@@ -10,8 +10,8 @@ class Navbar extends Component {
 		<div>
            <header className="ltn__header-area ltn__header-5 ltn__header-transparent--- gradient-color-4---">
 			<div className="ltn__header-top-area section-bg-6 top-area-color-white---">
-				<div className="container">
-				<div className="row">
+				 <div className="container">
+				{/*<div className="row">
 					<div className="col-md-7">
 					<div className="ltn__top-bar-menu">
 						<ul>
@@ -25,7 +25,7 @@ class Navbar extends Component {
 						<div className="ltn__top-bar-menu">
 						<ul>
 							<li className="d-none">
-							{/* ltn__language-menu */}
+							ltn__language-menu
 							<div className="ltn__drop-menu ltn__currency-menu ltn__language-menu">
 								<ul>
 								<li><a href="#" className="dropdown-toggle"><span className="active-currency">English</span></a>
@@ -45,7 +45,7 @@ class Navbar extends Component {
 								<Social />
 							</li>
 							<li>
-							{/* header-top-btn */}
+							header-top-btn 
 							<div className="header-top-btn">
 								<Link to="/add-listing">Add Listing</Link>
 							</div>
@@ -54,8 +54,8 @@ class Navbar extends Component {
 						</div>
 					</div>
 					</div>
-				</div>
-				</div>
+				</div>*/}
+				</div> 
 			</div>
 			<div className="ltn__header-middle-area ltn__header-sticky ltn__sticky-bg-white">
 				<div className="container">
@@ -81,8 +81,8 @@ class Navbar extends Component {
 						<nav>
 						<div className="ltn__main-menu go-top">
 							<ul>
-							<li className="menu-icon"><Link to="/">Home</Link>
-								<ul className="sub-menu menu-pages-img-show">
+							<li><Link to="/">Home</Link>
+								{/* <ul className="sub-menu menu-pages-img-show">
 								<li>
 									<Link to="/">Home Style 01</Link>
 									<img src={publicUrl+"assets/img/home-demos/home-1.jpg"} alt="#" />
@@ -123,9 +123,17 @@ class Navbar extends Component {
 									<Link to="/home-v10">Home Style 10</Link>
 									<img src={publicUrl+"assets/img/home-demos/home-11.jpg"}  alt="#" />
 								</li>
-								</ul>
+								</ul> */}
 							</li>
-							<li className="menu-icon"><Link to="/about">About</Link>
+							<li><Link to="/">Street Review</Link>
+							</li>
+							<li><Link to="/">Student Buddy</Link>
+							</li>
+							<li><Link to="/">Housing Checklist</Link>
+							</li>
+							<li><Link to="/">Open House</Link>
+							</li>
+							{/* <li className="menu-icon"><Link to="/about">About</Link>
 								<ul>
 								<li><Link to="/about">About</Link></li>
 								<li><Link to="/service">Services</Link></li>
@@ -152,8 +160,8 @@ class Navbar extends Component {
 									<li><Link to="/login">Sign in</Link></li>
 									<li><Link to="/register">Register</Link></li>
 								</ul>
-							</li>
-							<li className="menu-icon"><Link to="/blog-grid">News</Link>
+							</li> */}
+							{/* <li className="menu-icon"><Link to="/blog-grid">News</Link>
 								<ul>
 									<li><Link to="/blog">News</Link></li>
 									<li><Link to="/blog-grid">News Grid</Link></li>
@@ -197,7 +205,7 @@ class Navbar extends Component {
 									<li><Link to="/shop"><img src={publicUrl+"assets/img/banner/menu-banner-1.jpg"} alt="#" /></Link>
 									</li>
 								</ul>
-							</li>
+							</li> */}
 							<li><Link to="/contact">Contact</Link></li>
 							</ul>
 						</div>
