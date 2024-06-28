@@ -41,18 +41,18 @@ class AboutV2 extends Component {
 			          </ul>
 			          <ul className="ltn__list-item-2 ltn__list-item-2-before--- ltn__list-item-2-img mb-50">
 			            <li>
-			              <a href={publicUrl+"assets/img/img-slide/11.jpg"} data-rel="lightcase:myCollection">
-			                <img src={publicUrl+"assets/img/img-slide/11.jpg"} alt="Image" />
+			              <a href={publicUrl+"assets/img/others/03.jpg"} data-rel="lightcase:myCollection">
+			                <img src={publicUrl+"assets/img/others/03.jpg"} alt="Image" />
 			              </a>
 			            </li>
 			            <li>
-			              <a href={publicUrl+"assets/img/img-slide/12.jpg"} data-rel="lightcase:myCollection">
-			                <img src={publicUrl+"assets/img/img-slide/12.jpg"} alt="Image" />
+			              <a href={publicUrl+"assets/img/others/04.jpg"} data-rel="lightcase:myCollection">
+			                <img src={publicUrl+"assets/img/others/04.jpg"} alt="Image" />
 			              </a>
 			            </li>
 			            <li>
-			              <a href={publicUrl+"assets/img/img-slide/13.jpg"} data-rel="lightcase:myCollection">
-			                <img src={publicUrl+"assets/img/img-slide/13.jpg"} alt="Image" />
+			              <a href={publicUrl+"assets/img/others/05.jpg"} data-rel="lightcase:myCollection">
+			                <img src={publicUrl+"assets/img/others/05.jpg"} alt="Image" />
 			              </a>
 			            </li>
 			          </ul>
@@ -60,7 +60,7 @@ class AboutV2 extends Component {
 			      </div>
 			      <div className="col-lg-6 align-self-center">
 			        <div className="about-us-img-wrap about-img-right">
-			          <img src={publicUrl+"assets/img/others/9.png"} alt="About Us Image" />
+			          <img src={publicUrl+"assets/img/others/02.jpg"} alt="About Us Image" />
 			        </div>
 			      </div>
 			    </div>

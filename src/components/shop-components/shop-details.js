@@ -417,7 +417,7 @@ class ShopDetails extends Component {
                       <div class="ltn__feature-info">
                         <h6>
                           <b>
-                            <Link to="#/service-details">1327 Sq ft</Link>
+                            <Link to="/service-details">1327 Sq ft</Link>
                           </b>
                           <br />
                           20 x 16 sq feet
@@ -460,7 +460,7 @@ class ShopDetails extends Component {
                       <div class="ltn__feature-info">
                         <h6>
                           <b>
-                            <Link to="#/service-details">In Unit</Link>
+                            <Link to="/service-details">In Unit</Link>
                           </b>
                           <br />
                           20 x 16 sq feet

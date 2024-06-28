@@ -36,7 +36,7 @@ class Testimonial extends Component {
 			              </div>
 			              <div className="ltn__testimoni-name-designation">
 			                <h5>Jacob William</h5>
-			                <label>Selling Agents</label>
+			                {/* <label>Selling Agents</label> */}
 			              </div>
 			            </div>
 			          </div>
@@ -58,7 +58,7 @@ class Testimonial extends Component {
 			              </div>
 			              <div className="ltn__testimoni-name-designation">
 			                <h5>Kelian Anderson</h5>
-			                <label>Selling Agents</label>
+			                {/* <label>Selling Agents</label> */}
 			              </div>
 			            </div>
 			          </div>
@@ -80,7 +80,7 @@ class Testimonial extends Component {
 			              </div>
 			              <div className="ltn__testimoni-name-designation">
 			                <h5>Adam Joseph</h5>
-			                <label>Selling Agents</label>
+			                {/* <label>Selling Agents</label> */}
 			              </div>
 			            </div>
 			          </div>
@@ -102,7 +102,7 @@ class Testimonial extends Component {
 			              </div>
 			              <div className="ltn__testimoni-name-designation">
 			                <h5>James Carter</h5>
-			                <label>Selling Agents</label>
+			                {/* <label>Selling Agents</label> */}
 			              </div>
 			            </div>
 			          </div>

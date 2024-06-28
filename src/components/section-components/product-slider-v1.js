@@ -53,7 +53,7 @@ class ProductSliderV1 extends Component {
 			          </div>
 			          <div className="product-info">
 			            <div className="product-price">
-			              <span>$34,900<label>/Month</label></span>
+			              <span>$34,900<label>/Rent</label></span>
 			            </div>
 			            <h2 className="product-title go-top"><Link to="/product-details">New Apartment Nice View</Link></h2>
 			            <div className="product-description">
@@ -112,7 +112,7 @@ class ProductSliderV1 extends Component {
 			            <Link to="/product-details"><img src={publicUrl+"assets/img/product-3/2.jpg"} alt="#" /></Link>
 			            <div className="product-badge">
 			              <ul>
-			                <li className="sale-badge bg-green---">For Sale</li>
+			                <li className="sale-badge bg-green---">For Rent</li>
 			              </ul>
 			            </div>
 			            <div className="product-img-location-gallery">
@@ -137,7 +137,7 @@ class ProductSliderV1 extends Component {
 			          </div>
 			          <div className="product-info">
 			            <div className="product-price">
-			              <span>$34,900<label>/Month</label></span>
+			              <span>$34,900<label>/Rent</label></span>
 			            </div>
 			            <h2 className="product-title go-top"><Link to="/product-details">Modern Apartments</Link></h2>
 			            <div className="product-description">
@@ -221,7 +221,7 @@ class ProductSliderV1 extends Component {
 			          </div>
 			          <div className="product-info">
 			            <div className="product-price">
-			              <span>$34,900<label>/Month</label></span>
+			              <span>$34,900<label>/Rent</label></span>
 			            </div>
 			            <h2 className="product-title go-top"><Link to="/product-details">Comfortable Apartment</Link></h2>
 			            <div className="product-description">
@@ -305,7 +305,7 @@ class ProductSliderV1 extends Component {
 			          </div>
 			          <div className="product-info">
 			            <div className="product-price">
-			              <span>$34,900<label>/Month</label></span>
+			              <span>$34,900<label>/Rent</label></span>
 			            </div>
 			            <h2 className="product-title go-top"><Link to="/product-details">Luxury villa in Rego Park </Link></h2>
 			            <div className="product-description">
@@ -361,7 +361,7 @@ class ProductSliderV1 extends Component {
 			      <div className="col-lg-12">
 			        <div className="ltn__product-item ltn__product-item-4 text-center---">
 			          <div className="product-img go-top">
-			            <Link to="/product-details"><img src={publicUrl+"assets/img/product-3/5.jpg"} alt="#" /></Link>
+			            <Link to="/product-details"><img src={publicUrl+"assets/img/product-3/2.jpg"} alt="#" /></Link>
 			            <div className="product-badge">
 			              <ul>
 			                <li className="sale-badge bg-green">For Rent</li>
@@ -389,7 +389,7 @@ class ProductSliderV1 extends Component {
 			          </div>
 			          <div className="product-info">
 			            <div className="product-price">
-			              <span>$34,900<label>/Month</label></span>
+			              <span>$34,900<label>/Rent</label></span>
 			            </div>
 			            <h2 className="product-title go-top"><Link to="/product-details">Beautiful Flat in Manhattan </Link></h2>
 			            <div className="product-description">

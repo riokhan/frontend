@@ -23,10 +23,10 @@ class BlogSlider extends Component {
 		      <div className="col-lg-12">
 		        <div className="ltn__blog-item ltn__blog-item-3">
 		          <div className="ltn__blog-img">
-		            <Link to="/"><img src={publicUrl+"assets/img/blog/1.jpg"} alt="#" /></Link>
+		            <Link to="/"><img src={publicUrl+"assets/img/others/06.jpg"} alt="#" /></Link>
 		          </div>
 		          <div className="ltn__blog-brief">
-		            <div className="ltn__blog-meta">
+		            {/* <div className="ltn__blog-meta">
 		              <ul>
 		                <li className="ltn__blog-author">
 		                  <Link to="/team-details"><i className="far fa-user" />by: Admin</Link>
@@ -36,12 +36,12 @@ class BlogSlider extends Component {
 		                  <Link to="/blog-grid"><i className="fas fa-tags" />Decorate</Link>
 		                </li>
 		              </ul>
-		            </div>
-		            <h3 className="ltn__blog-title"><Link to="/">10 Brilliant Ways To Decorate Your Home</Link></h3>
+		            </div> */}
+		            <h3 className="ltn__blog-title"><Link to="/">33 Imrie Rd.-Allston</Link></h3>
 		            <div className="ltn__blog-meta-btn">
 		              <div className="ltn__blog-meta">
 		                <ul>
-		                  <li className="ltn__blog-date"><i className="far fa-calendar-alt" />June 24, 2021</li>
+		                  <li className="ltn__blog-date"><i className="far fa-calendar-alt" />June 24, 2024</li>
 		                </ul>
 		              </div>
 		              <div className="ltn__blog-btn">
@@ -55,10 +55,10 @@ class BlogSlider extends Component {
 		      <div className="col-lg-12">
 		        <div className="ltn__blog-item ltn__blog-item-3">
 		          <div className="ltn__blog-img">
-		            <Link to="/"><img src={publicUrl+"assets/img/blog/2.jpg"} alt="#" /></Link>
+		            <Link to="/"><img src={publicUrl+"assets/img/others/02.jpg"} alt="#" /></Link>
 		          </div>
 		          <div className="ltn__blog-brief">
-		            <div className="ltn__blog-meta">
+		            {/* <div className="ltn__blog-meta">
 		              <ul>
 		                <li className="ltn__blog-author">
 		                  <Link to="/team-details"><i className="far fa-user" />by: Admin</Link>
@@ -68,12 +68,12 @@ class BlogSlider extends Component {
 		                  <Link to="/blog-grid"><i className="fas fa-tags" />Interior</Link>
 		                </li>
 		              </ul>
-		            </div>
-		            <h3 className="ltn__blog-title"><Link to="/">The Most Inspiring Interior Design Of 2021</Link></h3>
+		            </div> */}
+		            <h3 className="ltn__blog-title"><Link to="/">4 Farrington Ave.-Allston</Link></h3>
 		            <div className="ltn__blog-meta-btn">
 		              <div className="ltn__blog-meta">
 		                <ul>
-		                  <li className="ltn__blog-date"><i className="far fa-calendar-alt" />July 23, 2021</li>
+		                  <li className="ltn__blog-date"><i className="far fa-calendar-alt" />July 23, 2024</li>
 		                </ul>
 		              </div>
 		              <div className="ltn__blog-btn">
@@ -87,10 +87,10 @@ class BlogSlider extends Component {
 		      <div className="col-lg-12">
 		        <div className="ltn__blog-item ltn__blog-item-3">
 		          <div className="ltn__blog-img">
-		            <Link to="/"><img src={publicUrl+"assets/img/blog/3.jpg"} alt="#" /></Link>
+		            <Link to="/"><img src={publicUrl+"assets/img/others/08.jpg"} alt="#" /></Link>
 		          </div>
 		          <div className="ltn__blog-brief">
-		            <div className="ltn__blog-meta">
+		            {/* <div className="ltn__blog-meta">
 		              <ul>
 		                <li className="ltn__blog-author">
 		                  <Link to="/team-details"><i className="far fa-user" />by: Admin</Link>
@@ -100,12 +100,12 @@ class BlogSlider extends Component {
 		                  <Link to="/blog-grid"><i className="fas fa-tags" />Estate</Link>
 		                </li>
 		              </ul>
-		            </div>
-		            <h3 className="ltn__blog-title"><Link to="/">Recent Commercial Real Estate Transactions</Link></h3>
+		            </div> */}
+		            <h3 className="ltn__blog-title"><Link to="/">47R Creighton St.-Jamaica</Link></h3>
 		            <div className="ltn__blog-meta-btn">
 		              <div className="ltn__blog-meta">
 		                <ul>
-		                  <li className="ltn__blog-date"><i className="far fa-calendar-alt" />May 22, 2021</li>
+		                  <li className="ltn__blog-date"><i className="far fa-calendar-alt" />May 22, 2024</li>
 		                </ul>
 		              </div>
 		              <div className="ltn__blog-btn">
@@ -119,10 +119,10 @@ class BlogSlider extends Component {
 		      <div className="col-lg-12">
 		        <div className="ltn__blog-item ltn__blog-item-3">
 		          <div className="ltn__blog-img">
-		            <Link to="/"><img src={publicUrl+"assets/img/blog/4.jpg"} alt="#" /></Link>
+		            <Link to="/"><img src={publicUrl+"assets/img/others/02.jpg"} alt="#" /></Link>
 		          </div>
 		          <div className="ltn__blog-brief">
-		            <div className="ltn__blog-meta">
+		            {/* <div className="ltn__blog-meta">
 		              <ul>
 		                <li className="ltn__blog-author">
 		                  <Link to="/team-details"><i className="far fa-user" />by: Admin</Link>
@@ -132,12 +132,12 @@ class BlogSlider extends Component {
 		                  <Link to="/blog-grid"><i className="fas fa-tags" />Room</Link>
 		                </li>
 		              </ul>
-		            </div>
-		            <h3 className="ltn__blog-title"><Link to="/">Renovating a Living Room? Experts Share Their Secrets</Link></h3>
+		            </div> */}
+		            <h3 className="ltn__blog-title"><Link to="/">8 Pratt St. Room 3-Allston</Link></h3>
 		            <div className="ltn__blog-meta-btn">
 		              <div className="ltn__blog-meta">
 		                <ul>
-		                  <li className="ltn__blog-date"><i className="far fa-calendar-alt" />June 24, 2021</li>
+		                  <li className="ltn__blog-date"><i className="far fa-calendar-alt" />June 24, 2024</li>
 		                </ul>
 		              </div>
 		              <div className="ltn__blog-btn">
@@ -151,10 +151,10 @@ class BlogSlider extends Component {
 		      <div className="col-lg-12">
 		        <div className="ltn__blog-item ltn__blog-item-3">
 		          <div className="ltn__blog-img">
-		            <Link to="/"><img src={publicUrl+"assets/img/blog/5.jpg"} alt="#" /></Link>
+		            <Link to="/"><img src={publicUrl+"assets/img/others/04.jpg"} alt="#" /></Link>
 		          </div>
 		          <div className="ltn__blog-brief">
-		            <div className="ltn__blog-meta">
+		            {/* <div className="ltn__blog-meta">
 		              <ul>
 		                <li className="ltn__blog-author">
 		                  <Link to="/team-details"><i className="far fa-user" />by: Admin</Link>
@@ -164,12 +164,12 @@ class BlogSlider extends Component {
 		                  <Link to="/blog-grid"><i className="fas fa-tags" />Trends</Link>
 		                </li>
 		              </ul>
-		            </div>
-		            <h3 className="ltn__blog-title"><Link to="/">7 home trends that will shape your house in 2021</Link></h3>
+		            </div> */}
+		            <h3 className="ltn__blog-title"><Link to="/">23 Kenney St.-Jamaica</Link></h3>
 		            <div className="ltn__blog-meta-btn">
 		              <div className="ltn__blog-meta">
 		                <ul>
-		                  <li className="ltn__blog-date"><i className="far fa-calendar-alt" />June 24, 2021</li>
+		                  <li className="ltn__blog-date"><i className="far fa-calendar-alt" />June 24, 2023</li>
 		                </ul>
 		              </div>
 		              <div className="ltn__blog-btn">

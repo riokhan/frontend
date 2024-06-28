@@ -15,7 +15,7 @@ class CategoryV1 extends Component {
 			      <div className="col-lg-12">
 			        <div className="section-title-area ltn__section-title-2--- text-center">
 			          <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">Our Aminities</h6>
-			          <h1 className="section-title">Building Aminities</h1>
+			          <h1 className="section-title">We take care of your entire renting process!</h1>
 			        </div>
 			      </div>
 			    </div>
@@ -23,8 +23,8 @@ class CategoryV1 extends Component {
 			      <div className="col-lg-3 col-md-4 col-sm-6 col-6">
 			        <div className="ltn__category-item ltn__category-item-5 text-center">
 			          <Link to="/">
-			            <span className="category-icon"><i className="flaticon-car" /></span>
-			            <span className="category-title">Parking Space</span>
+			            <span className="category-icon">  <img src={publicUrl+"assets/img/others/search.png" } style={{width:"50%",marginTop:"-11px"}} alt="Search" /></span>
+			            <span className="category-title">Search</span>
 			            <span className="category-btn"><i className="flaticon-right-arrow" /></span>
 			          </Link>
 			        </div>
@@ -32,8 +32,8 @@ class CategoryV1 extends Component {
 			      <div className="col-lg-3 col-md-4 col-sm-6 col-6">
 			        <div className="ltn__category-item ltn__category-item-5 text-center">
 			          <Link to="/">
-			            <span className="category-icon"><i className="flaticon-swimming" /></span>
-			            <span className="category-title">Swimming Pool</span>
+			            <span className="category-icon"> <img src={publicUrl+"assets/img/others/calendar.png" } style={{width:"50%",marginTop:"-11px"}} alt="calendar" /></span>
+			            <span className="category-title">View</span>
 			            <span className="category-btn"><i className="flaticon-right-arrow" /></span>
 			          </Link>
 			        </div>
@@ -41,8 +41,8 @@ class CategoryV1 extends Component {
 			      <div className="col-lg-3 col-md-4 col-sm-6 col-6">
 			        <div className="ltn__category-item ltn__category-item-5 text-center">
 			          <Link to="/">
-			            <span className="category-icon"><i className="flaticon-secure-shield" /></span>
-			            <span className="category-title">Private Security</span>
+			            <span className="category-icon"><img src={publicUrl+"assets/img/others/checklist.png" } style={{width:"50%",marginTop:"-11px"}} alt="checklist" /></span>
+			            <span className="category-title">Apply</span>
 			            <span className="category-btn"><i className="flaticon-right-arrow" /></span>
 			          </Link>
 			        </div>
@@ -50,13 +50,15 @@ class CategoryV1 extends Component {
 			      <div className="col-lg-3 col-md-4 col-sm-6 col-6">
 			        <div className="ltn__category-item ltn__category-item-5 text-center">
 			          <Link to="/">
-			            <span className="category-icon"><i className="flaticon-stethoscope" /></span>
-			            <span className="category-title">Medical Center</span>
+			            <span className="category-icon"><img src={publicUrl+"assets/img/others/home.png" } style={{width:"50%",marginTop:"-11px"}} alt="home" /></span>
+			            <span className="category-title">Move-in</span>
 			            <span className="category-btn"><i className="flaticon-right-arrow" /></span>
 			          </Link>
 			        </div>
 			      </div>
-			      <div className="col-lg-3 col-md-4 col-sm-6 col-6">
+			     
+				 
+				  {/* <div className="col-lg-3 col-md-4 col-sm-6 col-6">
 			        <div className="ltn__category-item ltn__category-item-5 text-center">
 			          <Link to="/">
 			            <span className="category-icon"><i className="flaticon-book" /></span>
@@ -91,7 +93,7 @@ class CategoryV1 extends Component {
 			            <span className="category-btn"><i className="flaticon-right-arrow" /></span>
 			          </Link>
 			        </div>
-			      </div>
+			      </div> */}
 			    </div>
 			  </div>
 			</div>

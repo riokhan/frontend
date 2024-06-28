@@ -247,7 +247,7 @@ class Navbar extends Component {
 					<div className="mini-cart-icon">
                             <a href="#ltn__utilize-cart-menu" className="ltn__utilize-toggle">
                                 <i className="icon-shopping-cart"></i>
-                                <sup>2</sup>
+                                <sup>4</sup>
                             </a>
                     </div>
 					{/* mini-cart */}
@@ -282,8 +282,8 @@ class Navbar extends Component {
 					</div>
 					<div className="ltn__utilize-menu">
 					<ul>
-						<li><a href="#">Home</a>
-						<ul className="sub-menu">
+						<li><a href="/">Home</a>
+						{/* <ul className="sub-menu">
 						<li><Link to="/">Home Style 01</Link></li>
 						<li><Link to="/home-v2">Home Style 02</Link></li>
 						<li><Link to="/home-v3">Home Style 03</Link></li>
@@ -294,9 +294,9 @@ class Navbar extends Component {
 						<li><Link to="/home-v8">Home Style 08</Link></li>
 						<li><Link to="/home-v9">Home Style 09</Link></li>
 						<li><Link to="/home-v10">Home Style 10</Link></li>
-						</ul>
+						</ul> */}
 						</li>
-						<li><Link to="/about">About</Link>
+						{/* <li><Link to="/about">About</Link>
 						<ul className="sub-menu">
 							<li><Link to="/about">About</Link></li>
 							<li><Link to="/service">Services</Link></li>
@@ -351,8 +351,16 @@ class Navbar extends Component {
 								<li><Link to="/contact">Contact</Link></li>
 								<li><Link to="/coming-soon">Coming Soon</Link></li>
 							</ul>
-                    	</li>
-						<li><Link to="/contact">Contact</Link></li>
+                    	</li> */}
+						<li><Link to="/listings">Street Review</Link>
+							</li>
+							<li><Link to="/listings">Student Buddy</Link>
+							</li>
+							<li><Link to="/listings">Housing Checklist</Link>
+							</li>
+							<li><Link to="/listings">Open House</Link>
+							</li>
+						<li><Link to="#">Contact</Link></li>
 					</ul>
 					</div>
 					<div className="ltn__utilize-buttons ltn__utilize-buttons-2">
@@ -406,41 +414,41 @@ class Navbar extends Component {
 				<div className="mini-cart-product-area ltn__scrollbar">
 					<div className="mini-cart-item clearfix">
 					<div className="mini-cart-img go-top">
-						<Link to="/product-details"><img src={publicUrl+"assets/img/product/1.png"} alt="Image" /></Link>
+						<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/home.jpg"} alt="Image" /></Link>
 						<span className="mini-cart-item-delete"><i className="icon-cancel" /></span>
 					</div>
 					<div className="mini-cart-info go-top">
-						<h6><Link to="/product-details">Wheel Bearing Retainer</Link></h6>
+						<h6><Link to="/product-details">33 Imrie Rd.-Allston</Link></h6>
 						<span className="mini-cart-quantity">1 x $65.00</span>
 					</div>
 					</div>
 					<div className="mini-cart-item clearfix">
 					<div className="mini-cart-img go-top">
-						<Link to="/product-details"><img src={publicUrl+"assets/img/product/2.png"} alt="Image" /></Link>
+						<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/home2.jpg"} alt="Image" /></Link>
 						<span className="mini-cart-item-delete"><i className="icon-cancel" /></span>
 					</div>
 					<div className="mini-cart-info go-top">
-						<h6><Link to="/product-details">Brake Conversion Kit</Link></h6>
+						<h6><Link to="/product-details">4 Farrington Ave.-Allston</Link></h6>
 						<span className="mini-cart-quantity">1 x $85.00</span>
 					</div>
 					</div>
 					<div className="mini-cart-item clearfix">
 					<div className="mini-cart-img go-top">
-						<Link to="/product-details"><img src={publicUrl+"assets/img/product/3.png"} alt="Image" /></Link>
+						<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/home6.jpg"} alt="Image" /></Link>
 						<span className="mini-cart-item-delete"><i className="icon-cancel" /></span>
 					</div>
 					<div className="mini-cart-info go-top">
-						<h6><Link to="/product-details">OE Replica Wheels</Link></h6>
+						<h6><Link to="/product-details">620 Dudley-Dorchester</Link></h6>
 						<span className="mini-cart-quantity">1 x $92.00</span>
 					</div>
 					</div>
 					<div className="mini-cart-item clearfix">
 					<div className="mini-cart-img go-top">
-						<Link to="/product-details"><img src={publicUrl+"assets/img/product/4.png"} alt="Image" /></Link>
+						<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/home7.jpg"} alt="Image" /></Link>
 						<span className="mini-cart-item-delete"><i className="icon-cancel" /></span>
 					</div>
 					<div className="mini-cart-info go-top">
-						<h6><Link to="/product-details">Shock Mount Insulator</Link></h6>
+						<h6><Link to="/product-details">144 Homestead St.-Dorchester</Link></h6>
 						<span className="mini-cart-quantity">1 x $68.00</span>
 					</div>
 					</div>

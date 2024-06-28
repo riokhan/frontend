@@ -219,10 +219,23 @@ font-family: 'Poppins', sans-serif;
     padding-left: 8px;
   }
   .mobileviewfilter{
-    padding-left: 45px !important;
+    /* padding-left: 45px !important; */
+    width: 350px;
   }
 }
 
+@media (max-width: 1199px) {
+  /* Modify this based on column def */
+  
+  .mobileviewfilter2{
+    
+    width: 385px;
+  }
+}
+
+.mobileviewfilter{
+width:350px
+}
 /* ----------------------------------------------------
     Normalize    0B2C3D
 ---------------------------------------------------- */
@@ -4029,8 +4042,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .ltn__breadcrumb-area {
   background-color: var(--section-bg-1);
   margin-bottom: 120px;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
 }
 
 .ltn__breadcrumb-list ul {
@@ -4360,6 +4374,15 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   display: inline-block;
   margin: 5px 3px;
 }
+/* .ltn__tagcloud-widget ul li a {
+  display: block;
+  padding: 8px 12px 6px;
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: var(--section-bg-1);
+  font-weight: 700;
+  font-family: var(--ltn__heading-font);
+} */
 .ltn__tagcloud-widget ul li a {
   display: block;
   padding: 8px 12px 6px;
@@ -4368,7 +4391,16 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   background-color: var(--section-bg-1);
   font-weight: 700;
   font-family: var(--ltn__heading-font);
+  transition: background-color 0.3s;
 }
+
+.ltn__tagcloud-widget ul li a.active,
+.ltn__tagcloud-widget ul li a:active,
+.ltn__tagcloud-widget ul li a:focus {
+  background-color: var(--ltn__secondary-color);
+  color: #fff; /* Optional: Change text color for better contrast */
+}
+
 .ltn__tagcloud-widget ul li a:hover {
   background-color: var(--ltn__secondary-color);
   color: var(--white);
@@ -17830,6 +17862,12 @@ input.cart-plus-minus-box {
     -webkit-transform: scale(1);
   }
 }
+/* 
+
+.active,.rezingo:hover {
+  background-color: red;
+  color: var(--white);
+} */
 
 /*----------------------------------------
   Search Popup
@@ -17866,6 +17904,20 @@ input.cart-plus-minus-box {
   background-color: var(--ltn__secondary-color);
   color: var(--white);
 }
+
+/* 
+.theme-btn-1:active {
+  background-color: var(--ltn__secondary-color);
+  color: var(--white);
+} */
+/* 
+.active, .new:hover {
+  background-color: red;
+  color: white !important;
+  height: 0px;
+}  */
+
+
 .theme-btn-1:hover {
   background-color: var(--ltn__primary-color);
   color: var(--white);
