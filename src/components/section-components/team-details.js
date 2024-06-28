@@ -1,149 +1,596 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
-
+import React, { Component } from "react";
+// import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import { Link } from "react-router-dom";
+ 
 class TeamDetails extends Component {
-
-    render() {
-
-        let publicUrl = process.env.PUBLIC_URL+'/'
-
-    return <div className="ltn__team-details-area mb-120">
-                <div className="container">
+  constructor(props) {
+    super(props);
+    this.state = {
+      startDate: new Date(),
+    };
+  }
+ 
+  handleChange = (date) => {
+    this.setState({
+      startDate: date,
+    });
+  };
+ 
+  render() {
+    let publicUrl = process.env.PUBLIC_URL + "/";
+ 
+    return (
+      <div className="ltn__team-details-area mb-120">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="property-details-left mb-40">
+                <h2>1572 Tremont St., #2, (Mission Hill)</h2>
+                <div className="property-images">
+                  <img
+                    src={publicUrl + "assets/img/neighbour/3.jpg"}
+                    alt="Property Image 1"
+                  />
+                  {/* <div className="small-images">
+                    <img
+                      src={publicUrl + "assets/img/team/1.jpg"}
+                      alt="Property Image 2"
+                    />
+                    <img
+                      src={publicUrl + "assets/img/team/2.jpg"}
+                      alt="Property Image 3"
+                    />
+                    <img
+                      src={publicUrl + "assets/img/team/3.jpg"}
+                      alt="Property Image 4"
+                    />
+                  </div> */}
+                </div>
                 <div className="row">
-                    <div className="col-lg-4">
-                    <div className="ltn__team-details-member-info text-center mb-40">
-                        <div className="team-details-img">
-                        <img src={publicUrl+"assets/img/team/4.jpg"} alt="Team Member Image" />
-                        </div>
-                        <h2>Rosalina D. William</h2>
-                        <h6 className="text-uppercase ltn__secondary-color">Property Seller</h6>
-                        <div className="ltn__social-media-3">
-                        <ul>
-                            <li><a href="#" title="Facebook"><i className="fab fa-facebook-f" /></a></li>
-                            <li><a href="#" title="Twitter"><i className="fab fa-twitter" /></a></li>
-                            <li><a href="#" title="Linkedin"><i className="fab fa-linkedin" /></a></li>
-                        </ul>
-                        </div>
-                    </div>
-                    </div>
-                    <div className="col-lg-8">
-                    <div className="ltn__team-details-member-info-details">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <div className="row">
-                        <div className="col-lg-6">
-                            <div className="ltn__team-details-member-about">
-                            <ul>
-                                <li><strong>Positions:</strong> Senior Property Seller</li>
-                                <li><strong>Experience:</strong> 10+ Years</li>
-                                <li><strong>Location:</strong> 13/A, NYC</li>
-                                <li><strong>Practice Area:</strong> Property Seller</li>
-                            </ul>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="ltn__team-details-member-about">
-                            <ul>
-                                <li><strong>Email:</strong> example@example.com</li>
-                                <li><strong>Fax:</strong> +0123-456 789</li>
-                                <li><strong>Phone:</strong> +0123-456 789</li>
-                            </ul>
-                            </div>
-                        </div>
-                        </div>
-                        <hr />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequu ntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                        <div className="row ltn__custom-gutter mt-50 mb-20">
-                        <div className="col-xl-4 col-sm-6 col-12 go-top">
-                            <div className="ltn__feature-item ltn__feature-item-6 text-center">
-                            <div className="ltn__feature-icon">
-                                <span><i className="icon-tire" /></span>
-                            </div>
-                            <div className="ltn__feature-info">
-                                <h4><Link to="/service">Home Buying</Link></h4>
-                                <p>Lorem ipsum dolor sit ame it, consectetur adipisicing elit, sed do eiusmod te mp or</p>
-                                {/* <a class="ltn__service-btn" href="service.html">Read More</a> */}
-                                <Link className="ltn__service-btn" to="/service-details">Read More <i className="flaticon-right-arrow" /></Link>
-                            </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-4 col-sm-6 col-12">
-                            <div className="ltn__feature-item ltn__feature-item-6 text-center active">
-                            <div className="ltn__feature-icon">
-                                <span><i className="icon-mechanic" /></span>
-                            </div>
-                            <div className="ltn__feature-info go-top">
-                                <h4><Link to="/team">Home Selling</Link></h4>
-                                <p>Lorem ipsum dolor sit ame it, consectetur adipisicing elit, sed do eiusmod te mp or</p>
-                                {/* <a class="ltn__service-btn" href="service.html">Read More</a> */}
-                                <Link className="ltn__service-btn" to="/service-details">Read More <i className="flaticon-right-arrow" /></Link>
-                            </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-4 col-sm-6 col-12">
-                            <div className="ltn__feature-item ltn__feature-item-6 text-center">
-                            <div className="ltn__feature-icon">
-                                <span><i className="icon-wheel-1" /></span>
-                            </div>
-                            <div className="ltn__feature-info go-top">
-                                <h4><Link to="/service-details">Escrow Services</Link></h4>
-                                <p>Lorem ipsum dolor sit ame it, consectetur adipisicing elit, sed do eiusmod te mp or</p>
-                                {/* <a class="ltn__service-btn" href="service.html">Read More</a> */}
-                                <Link className="ltn__service-btn" to="/service-details">Read More <i className="flaticon-right-arrow" /></Link>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequu ntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                        <div className="ltn__form-box contact-form-box box-shadow white-bg mt-50">
-                        <h4 className="title-2">Contact for any Inquiry</h4>
-                        <form id="contact-form" action="mail.php" method="post">
-                            <div className="row">
-                            <div className="col-md-6">
-                                <div className="input-item input-item-name ltn__custom-icon">
-                                <input type="text" name="name" placeholder="Enter your name" />
-                                </div>
-                            </div>
-                            <div className="col-md-6">
-                                <div className="input-item input-item-email ltn__custom-icon">
-                                <input type="email" name="email" placeholder="Enter email address" />
-                                </div>
-                            </div>
-                            <div className="col-md-6">
-                                <div className="input-item">
-                                <select className="nice-select">
-                                    <option>Select Service Type</option>
-                                    <option>Property Management </option>
-                                    <option>Mortgage Service </option>
-                                    <option>Consulting Service</option>
-                                    <option>Home Buying</option>
-                                    <option>Home Selling</option>
-                                    <option>Escrow Services</option>
-                                </select>
-                                </div>
-                            </div>
-                            <div className="col-md-6">
-                                <div className="input-item input-item-phone ltn__custom-icon">
-                                <input type="text" name="phone" placeholder="Enter phone number" />
-                                </div>
-                            </div>
-                            </div>
-                            <div className="input-item input-item-textarea ltn__custom-icon">
-                            <textarea name="message" placeholder="Enter message" defaultValue={""} />
-                            </div>
-                            <p><label className="input-info-save mb-0"><input type="checkbox" name="agree" /> Save my name, email, and website in this browser for the next time I comment.</label></p>
-                            <div className="btn-wrapper mt-0">
-                            <button className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">get an free service</button>
-                            </div>
-                            <p className="form-messege mb-0 mt-20" />
-                        </form>
-                        </div>
-                    </div>
-                    </div>
+                  <div className="col-6">
+                    <p>Rent: $4900/month</p>
+                  </div>
+                  <div className="col-6">
+                    <p>Move-in Date: Sep 1, 2024</p>
+                  </div>
                 </div>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "100%",
+                  }}
+                >
+                  <button
+                    className="btn btn-primary"
+                    style={{ borderRadius: "10px" }}
+                  >
+                    Go to property
+                  </button>
                 </div>
+              </div>
             </div>
-        }
+            <div className="col-lg-8">
+              <div className="request-viewing">
+                <h4>Request a viewing</h4>
+                <p>Submit new viewing request</p>
+                <p>
+                  Pick all preferred time slots (Can select multiple options)
+                </p>
+                <h4>Pick Date </h4>
+ 
+                <div className="row ltn__category-slider-active--- slick-arrow-1  ">
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "108px",
+                      height: "90px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                      border: "2px solid #FF5A3C",
+                    }}
+                  >
+                    <Link
+                      to="#/team-details#/shop"
+                      style={{ padding: "12px 24px 25px" }}
+                    >
+                      <span
+                        style={{
+                          fontSize: "15px",
+                          color: "black",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Sat
+                      </span>
+                      <h3
+                        className="category-title"
+                        style={{ fontSize: "28px", marginTop: "0px" }}
+                      >
+                        29
+                      </h3>
+                    </Link>
+                  </div>
+ 
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "123px",
+                      height: "90px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                      border: "2px solid #FF5A3C",
+                    }}
+                  >
+                    <Link
+                      to="#/team-details#/shop"
+                      style={{ padding: "12px 24px 25px" }}
+                    >
+                      <span
+                        style={{
+                          fontSize: "15px",
+                          color: "black",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Sun
+                      </span>
+                      <h3
+                        className="category-title"
+                        style={{ fontSize: "28px", marginTop: "0px" }}
+                      >
+                        {" "}
+                        30
+                      </h3>
+                    </Link>
+                  </div>
+ 
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "123px",
+                      height: "90px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                      border: "2px solid #FF5A3C",
+                    }}
+                  >
+                    <Link
+                      to="#/team-details#/shop"
+                      style={{ padding: "12px 24px 25px" }}
+                    >
+                      <span
+                        style={{
+                          fontSize: "15px",
+                          color: "black",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Mon
+                      </span>
+                      <h3
+                        className="category-title"
+                        style={{ fontSize: "28px", marginTop: "0px" }}
+                      >
+                        {" "}
+                        1
+                      </h3>
+                    </Link>
+                  </div>
+ 
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "108px",
+                      height: "90px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                      border: "2px solid #FF5A3C",
+                    }}
+                  >
+                    <Link
+                      to="#/team-details#/shop"
+                      style={{ padding: "12px 24px 25px" }}
+                    >
+                      <span
+                        style={{
+                          fontSize: "15px",
+                          color: "black",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Tue
+                      </span>
+                      <h3
+                        className="category-title"
+                        style={{ fontSize: "28px", marginTop: "0px" }}
+                      >
+                        {" "}
+                        2
+                      </h3>
+                    </Link>
+                  </div>
+ 
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "108px",
+                      height: "90px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                      border: "2px solid #FF5A3C",
+                    }}
+                  >
+                    <Link
+                      to="#/team-details#/shop"
+                      style={{ padding: "12px 24px 25px" }}
+                    >
+                      <span
+                        style={{
+                          fontSize: "15px",
+                          color: "black",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Wed
+                      </span>
+                      <h3
+                        className="category-title"
+                        style={{ fontSize: "28px", marginTop: "0px" }}
+                      >
+                        {" "}
+                        3
+                      </h3>
+                    </Link>
+                  </div>
+ 
+                  {/* <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "123px",
+                      height: "100px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    <Link to="#/shop">
+                      <span class="category-title">
+                        Wed
+                        <br />3
+                      </span>
+                    </Link>
+                  </div> */}
+ 
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "108px",
+                      height: "90px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                      border: "2px solid #FF5A3C",
+                    }}
+                  >
+                    <Link
+                      to="#/team-details#/shop"
+                      style={{ padding: "12px 24px 25px" }}
+                    >
+                      <span
+                        style={{
+                          fontSize: "15px",
+                          color: "black",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Thu
+                      </span>
+                      <h3
+                        className="category-title"
+                        style={{ fontSize: "28px", marginTop: "0px" }}
+                      >
+                        {" "}
+                        4
+                      </h3>
+                    </Link>
+                  </div>
+ 
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "108px",
+                      height: "90px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                      border: "2px solid #FF5A3C",
+                    }}
+                  >
+                    <Link
+                      to="#/team-details#/shop"
+                      style={{ padding: "12px 24px 25px" }}
+                    >
+                      <span
+                        style={{
+                          fontSize: "15px",
+                          color: "black",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Fri
+                      </span>
+                      <h3
+                        className="category-title"
+                        style={{ fontSize: "28px", marginTop: "0px" }}
+                      >
+                        {" "}
+                        5
+                      </h3>
+                    </Link>
+                  </div>
+                </div>
+                <h4 style={{ marginTop: "10px" }}>
+                  Pick Time (Eastern Time Zone/ EST){" "}
+                </h4>
+                <div className="row ltn__category-slider-active--- slick-arrow-1 ">
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "91px",
+                      height: "54px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    <Link
+                      to
+                      href="#/team-details#/shop"
+                      style={{ padding: "16px 0px 0px" }}
+                    >
+                      <span
+                        className="category-title"
+                        style={{ fontSize: "14px" }}
+                      >
+                        10:00 am
+                      </span>
+                    </Link>
+                  </div>
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "91px",
+                      height: "54px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    <Link
+                      to
+                      href="#/team-details#/shop"
+                      style={{ padding: "16px 0px 0px" }}
+                    >
+                      <span
+                        className="category-title"
+                        style={{ fontSize: "14px" }}
+                      >
+                        10:30 am
+                      </span>
+                    </Link>
+                  </div>
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "91px",
+                      height: "54px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    <Link
+                      to
+                      href="#/team-details#/shop"
+                      style={{ padding: "16px 0px 0px" }}
+                    >
+                      <span
+                        className="category-title"
+                        style={{ fontSize: "14px" }}
+                      >
+                        11:00 am
+                      </span>
+                    </Link>
+                  </div>
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "91px",
+                      height: "54px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    <Link
+                      to
+                      href="#/team-details#/shop"
+                      style={{ padding: "16px 0px 0px" }}
+                    >
+                      <span
+                        className="category-title"
+                        style={{ fontSize: "14px" }}
+                      >
+                        11:30 am
+                      </span>
+                    </Link>
+                  </div>
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "91px",
+                      height: "54px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    <Link
+                      to
+                      href="#/team-details#/shop"
+                      style={{ padding: "16px 0px 0px" }}
+                    >
+                      <span
+                        className="category-title"
+                        style={{ fontSize: "14px" }}
+                      >
+                        12:00 pm
+                      </span>
+                    </Link>
+                  </div>
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "91px",
+                      height: "54px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    <Link
+                      to
+                      href="#/team-details#/shop"
+                      style={{ padding: "16px 0px 0px" }}
+                    >
+                      <span
+                        className="category-title"
+                        style={{ fontSize: "14px" }}
+                      >
+                        12:30 pm
+                      </span>
+                    </Link>
+                  </div>
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "91px",
+                      height: "54px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    <Link
+                      to
+                      href="#/team-details#/shop"
+                      style={{ padding: "16px 0px 0px" }}
+                    >
+                      <span
+                        className="category-title"
+                        style={{ fontSize: "14px" }}
+                      >
+                        01:00 pm
+                      </span>
+                    </Link>
+                  </div>
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "91px",
+                      height: "54px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    <Link
+                      to
+                      href="#/team-details#/shop"
+                      style={{ padding: "16px 0px 0px" }}
+                    >
+                      <span
+                        className="category-title"
+                        style={{ fontSize: "14px" }}
+                      >
+                        01:30 pm
+                      </span>
+                    </Link>
+                  </div>
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "91px",
+                      height: "54px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    <Link
+                      to
+                      href="#/team-details#/shop"
+                      style={{ padding: "16px 0px 0px" }}
+                    >
+                      <span
+                        className="category-title"
+                        style={{ fontSize: "14px" }}
+                      >
+                        02:00 pm
+                      </span>
+                    </Link>
+                  </div>
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "91px",
+                      height: "54px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    <Link
+                      to
+                      href="#/team-details#/shop"
+                      style={{ padding: "16px 0px 0px" }}
+                    >
+                      <span
+                        className="category-title"
+                        style={{ fontSize: "14px" }}
+                      >
+                        02:30 pm
+                      </span>
+                    </Link>
+                  </div>
+ 
+                  <div
+                    className="ltn__category-item ltn__category-item-5 text-center"
+                    style={{
+                      width: "91px",
+                      height: "54px",
+                      marginBottom: "10px",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    <Link
+                      to
+                      href="#/team-details#/shop"
+                      style={{ padding: "16px 0px 0px" }}
+                    >
+                      <span
+                        className="category-title"
+                        style={{ fontSize: "14px" }}
+                      >
+                        03:00 pm
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <button
+                className="btn btn-large btn-primary mt-50"
+                style={{ borderRadius: "15px" }}
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
-
-export default TeamDetails
+ 
+export default TeamDetails;
+ 

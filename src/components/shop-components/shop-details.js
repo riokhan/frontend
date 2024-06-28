@@ -48,7 +48,7 @@ class ShopDetails extends Component {
                     <div className="btn-wrapper">
                       <h2>Rent $25000 /month</h2>
 
-                      <Link to="#" className="theme-btn-1 btn btn-effect-1">
+                      <Link to="/team-details" className="theme-btn-1 btn btn-effect-1">
                         Tour
                       </Link>
                       <span className="go-top">
