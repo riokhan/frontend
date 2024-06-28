@@ -24,7 +24,7 @@ class TeamDetails extends Component {
       <div className="ltn__team-details-area mb-120">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-4">
+            <div className="col-lg-4" style={{backgroundColor:"#dc35450f",padding:"30px"}}>
               <div className="property-details-left mb-40">
                 <h2>1572 Tremont St., #2, (Mission Hill)</h2>
                 <div className="property-images">
@@ -49,10 +49,10 @@ class TeamDetails extends Component {
                 </div>
                 <div className="row">
                   <div className="col-6">
-                    <p>Rent: $4900/month</p>
+                    <p style={{fontWeight:"bold",color:"black",marginTop:"10px"}}>Rent:<br/>$4900/month</p>
                   </div>
                   <div className="col-6">
-                    <p>Move-in Date: Sep 1, 2024</p>
+                    <p style={{textAlign:"end",color:"black",marginTop:"10px",fontWeight:"bold"}}>Move-in Date: <br/>Sep 1, 2024</p>
                   </div>
                 </div>
                 <div
@@ -72,8 +72,8 @@ class TeamDetails extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-lg-8">
-              <div className="request-viewing">
+            <div className="col-lg-8" style={{paddingLeft:"30px"}}>
+              <div className="request-viewing" style={{marginTop:"20px"}}>
                 <h4>Request a viewing</h4>
                 <p>Submit new viewing request</p>
                 <p>
@@ -580,7 +580,7 @@ class TeamDetails extends Component {
               </div>
               <button
                 className="btn btn-large btn-primary mt-50"
-                style={{ borderRadius: "15px" }}
+                style={{ borderRadius: "15px" ,width:"100%"}}
               >
                 Next
               </button>
